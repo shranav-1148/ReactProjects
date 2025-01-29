@@ -3,11 +3,11 @@ import {FiHeart} from 'react-icons/fi'
 import {AiOutlineShoppingCart, AiOutlineUserAdd} from 'react-icons/ai'
 
 
-function Nav() {
+function Nav({handleInputChange, query}) {
   return (
     <nav>
       <div className='nav-container'>
-        <input type='text' placeholder='Enter your Search Shoes' className='search-input'></input>
+        <input type='text' placeholder='Enter your Search Shoes' onChange={handleInputChange} query={query} className='search-input'></input>
       </div>
       
       <div className='profile-container'>
